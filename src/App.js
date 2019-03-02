@@ -5,6 +5,7 @@ import logo from './logo.svg'
 import Footer from './Footer'
 import Home from './Home'
 import NovoAnuncio from './NovoAnuncio'
+import Categorias from './Categorias'
 import base from './base'
 
 class App extends Component {
@@ -24,6 +25,7 @@ class App extends Component {
         <div className="App">
           <Route path='/' exact render={() => <Home categorias={this.state.categorias} />} />
           <Route path='/novo-anuncio' exact render={() => <NovoAnuncio categorias={this.state.categorias} />} />
+          <Route path='/categorias' render={() => <Categorias categorias={this.state.categorias} /> } />
           <Footer />
         </div>
       </Router>
