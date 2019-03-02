@@ -29,7 +29,6 @@ class Anuncio extends Component {
       <div>
         <h1>{anuncio.nome}</h1>
         <p><img src={anuncio.foto} alt={anuncio.nome} /></p>
-        <p>{JSON.stringify(this.state.anuncio)}</p>
       </div>
     )
   }
